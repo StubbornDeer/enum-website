@@ -60,6 +60,12 @@ h3 {
 h2, h3 {
     font-weight: bold;
 }
+h4 {
+    color: #542db3
+}
+h4 a {
+    font-weight: bold;
+}
 .title {
     font-weight: bold;
     font-size: 26px;
@@ -118,11 +124,11 @@ section.header {
 ul {
     list-style: none;
 }
-li {
+.before-now li {
     display: flex;
     align-items: center;
 }
-li::before {
+.before-now li::before {
     content: '\f704';
     font-family: "tabler-icons";
     font-style: normal;
@@ -145,10 +151,49 @@ li::before {
 .now li.before {
     opacity: 0.1;
 }
+.card {
+    border: none;
+    background: linear-gradient(330deg,#f7ecff 14.16%,#e7e5ff 86.76%),#7670ab;
+}
+.card-header {
+    border-bottom: none;
+    background-color: #d2c4fd;
+}
+.card-title {
+    color: #966fdb;
+}
+.btn:disabled {
+    background-color: #d0b8e5;
+}
+.feature .icon  {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 37%;
+    margin-bottom: 10px;
+}
+.feature .icon i {
+    font-size: 36px;
+    margin: auto;
+    color: #fff;
+}
+.feature .icon.nocode {
+    background: linear-gradient(330deg,#9d6dc1 14.16%,#44add5 86.76%);
+}
+.feature .icon.data {
+    background: linear-gradient(330deg,#c16d6d 14.16%,#44d5ad 86.76%);
+}
+.feature .icon.chat {
+    background: linear-gradient(330deg,#309bc3 14.16%,#4ad91b 86.76%);
+}
+.feature .icon.key {
+    background: linear-gradient(330deg,#8433c3 14.16%,#5b8fdd 86.76%);
+}
+.asteriks {
+    font-size: 20px;
+}
 @media (min-width: 1200px){
-    .h1, h1 {
-        font-size: 4.5rem;
-    }
+
 }
       .bd-placeholder-img {
         font-size: 1.125rem;
