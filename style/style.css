@@ -1,6 +1,9 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+body.pages {
+    background-image: url(../images/back2.png);
+}
 header {
     background-color: #fff;
     box-shadow: 0px 0px 16px 21px #f7f7f74a;
@@ -30,6 +33,13 @@ a.register {
 }
 a.register:hover {
     background-color: #9831ec;
+}
+.header-links {
+    display: flex;
+    gap: 22px;
+}
+.header-links a {
+    margin: auto;
 }
 .logo img {
     width: 20px;
@@ -114,6 +124,12 @@ main {
     /*height: 100vh;*/
     background-repeat: no-repeat;
     background-size: cover;
+}
+main.changelog {
+    background: none;
+}
+.title {
+    color: #9958bf;
 }
 .header img {
     max-width: 100%;
@@ -311,4 +327,60 @@ footer .copy {
 .container::-webkit-scrollbar-thumb, .scrollable::-webkit-scrollbar-thumb{
     background: #bfbaf3;
     border-radius: 5px;
+}
+.changelog-block {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 21px #f7f7f74a;
+}
+.news-block {
+    position: relative;
+}
+.news-block .badge-block {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.news-block .cover {
+    width: 100%;
+}
+.news-block .cover img {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #e9e8e8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 21px #efeded4a;
+}
+.news-block li::before {
+    content: '\ebaa';
+    color: #6a68f3;
+    font-family: "tabler-icons";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 2px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 8px;
+    line-height: 23px;
+    padding-left: 2px;
+    height: 24px;
+    width: 24px;
+    background-color: #eef1fd;
+    border-radius: 50%;
+    vertical-align: sub;
+}
+.bugs li::before {
+    content: '\eaf3';
+    color: #af5f3a;
+}
+.badge {
+    font-weight: normal;
+}
+.badge.version {
+    background-color: #2bbdbd;
+}
+.badge.feat {
+    background-color: #942bbd;
 }
